@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *print_to_98 - natural numbers from n to 98.
- *@n: input.
+ *print_to_98 - print from n (input) to 98
+ *@n: input starting point
  *
  *Return: void.
  *
