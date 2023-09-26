@@ -4,8 +4,7 @@
  * _strspn - look for a substring
  * @s: array of char
  * @accept: search area
- *
- * Return: search result 
+ * Return: search result
  */
 unsigned int _strspn(char *s, char *accept)
 {
