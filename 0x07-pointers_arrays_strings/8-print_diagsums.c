@@ -1,33 +1,22 @@
-#include "main.h"
 #include <stdio.h>
-/**
- * print_diagsums - sum up the 2 diagonals of a 2D matrix
- * @a: array of int (2D)
- * @size: array size
- */
+#include "main.h"
 
+/**
+ * print_diagsums - sum of diagonals of a matrix
+ * @a: matrix
+ * @size: size
+ */
 void print_diagsums(int *a, int size)
 {
-	int indx, set; sum;
+	int sum;
+	unsigned int x = 0;
+	unsigned int y = 0;
 
-	indx = 0;
-	sum = 0;
-	set = size * size;
-	while (indx < set)
+	for (sum = 0; sum < size; sum++)
 	{
-		if (indx % (size + 1) == 0)
-			sum += a[indx];
-		indx++;
+		x += a[(size * sum) + sum];
+		y += a[(size * (sum + 1)) - (sum + 1)];
 	}
-	printf("%d, ", sum);
 
-	sum = 0;
-	indx = 0;
-	while (indx < set)
-	{
-		if (indx % (size - 1) == 0 && indx != (set - 1) && indx != 0)
-			sum += a[indx];
-		indx++;
-	}
-	printf("%d\n", sum);
+	printf("%d, %d\n", x, y);
 }
