@@ -12,14 +12,14 @@ int checkers_len(char *str)
 }
 
 /**
- * checkes_pal - check for palindrome
+ * checkers_pal - check for palindrome
  * @indx: count index
  * @len: string len
  * @strr: is the string
  * Return: result
  * error code: 0
 **/
-int checkp(int indx, int len, char *strr)
+int checkers_pal(int indx, int len, char *strr)
 {
 	if (len > 0)
 	{
