@@ -1,4 +1,4 @@
-p#include "main.h"
+#include "main.h"
 /**
   * checkers_len - check strlen
   * @str: string in
