@@ -1,4 +1,4 @@
-#ifndef SINGLY_LJNKED_LISTS_HEAD
+#ifndef SINGLY_LINKED_LISTS_HEAD
 #define SINGLY_LINKED_LISTS_HEAD
 
 #include <stdio.h>

@@ -8,7 +8,7 @@
 size_t print_list(const list_t *h)
 {
 	size_t el_no;
-	char msg[] = "nill"
+	char msg[] = "nill";
 
 	el_no = 0;
 	while (h != NULL)
