@@ -2,47 +2,47 @@
 #include <stdlib.h>
 
 /**
- * main - Prints coints left
- * @args: Paramater Entry
- * @argv: One number of argumets
- * Return: zero onOne number of argumetsr
+ * main - change at a store
+ * @args: arg array
+ * @argv: arg array index
+ * Return: result
  */
 
 int main(int args, char *argv[])
 {
-	int  c, coins = 0;
+	int  chan, cash = 0;
 
 	if (args != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	c = atoi(argv[1]);
-	if (c < 0)
+	chan = atoi(argv[1]);
+	if (chan < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-	for (; c >= 0;)
+	for (; chan >= 0;)
 	{
-		if (c >= 25)
-			c -= 25;
+		if (chan >= 25)
+			chan -= 25;
 
-		else if (c >= 10)
-			c -= 10;
+		else if (chan >= 10)
+			chan -= 10;
 
-		else if (c >= 5)
-			c -= 5;
+		else if (chan >= 5)
+			chan -= 5;
 
-		else if (c >= 2)
-			c -= 2;
+		else if (chan >= 2)
+			chan -= 2;
 
-		else if (c >= 1)
-			c -= 1;
+		else if (chan >= 1)
+			chan -= 1;
 		else
 			break;
-		coins += 1;
+		cash += 1;
 	}
-	printf("%d\n", coins);
+	printf("%d\n", cash);
 	return (0);
 }
