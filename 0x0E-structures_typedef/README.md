@@ -1,3 +1,0 @@
-struts
-typedefs
-in c
